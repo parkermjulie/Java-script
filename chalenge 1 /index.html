@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SpaceX- Your Travel Overview</title>
+		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+		<script src="scripts/main.js" defer></script>
+		<script src="https://kit.fontawesome.com/2afe19ea84.js" crossorigin="anonymous"></script>
+	</head>
+	<body onLoad="newDistance();direction(); fuelLeft()" >
+	
+<header>
+<div class="img">
+   <img src="images/logo.png">
+</div>
+<ul class="menu">
+    <li><strong>TRACK <i class="fas fa-caret-right"></i></strong></li>
+     <li><a href="#distance">Distance Travelled</a></li>
+         <li><a href="#fuel">Fuel Left</a></li>
+    <li><a href="#current">Current Atmosphere</a></li>
+
+</ul>
+ 
+	</header>
+	
+<section id="distance">
+<div></div>
+<div >
+<h1 >Distance Travelled </h1>
+    <div class="info" class="sub"><span id="travelled">0 </span>/180 mln km</div>
+
+</div>
+
+</section>
+  
+   <section id="fuel">
+<div></div>
+<div >
+<h1 >Fuel Left</h1>
+<div class="info"  id="left">0</div>
+</div>
+</section>
+  
+   
+    <section id="current">
+<div></div>
+<div >
+<h1 >Current Atmosphere </h1>
+    <div class="info"  id="atmosphere" > Troposphere</div>
+</div>
+</section>
+   
+   
+
+	</body>
+</html>

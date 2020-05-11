@@ -1,0 +1,87 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body{
+	font-family: Avenir;
+	background-color: black;
+ background-image: url("banner.png");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+ background-position: 0% 20%;
+    color:white;
+
+}
+
+ @font-face { font-family: Avenir; src: url('avenir.ttc'); } 
+
+header{
+    display: grid;
+    background-color: #5A82C7;
+     grid-template-columns: 30% 1fr;
+    overflow: hidden;
+    position:fixed;
+width: 100%;
+    margin-top: -50px;
+    padding: 0px;
+    z-index:1;
+
+    
+
+}
+.img{
+    padding:20px;
+}
+
+ul.menu{
+     display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    padding-top:20px;
+    color:white;
+    margin:0px;
+      
+}
+
+ul.menu a{
+    text-decoration: none;
+    color:white;
+}
+ul.menu a:hover{
+    text-decoration: none;
+    font-weight: bold;
+}
+li{
+    padding:10px;
+}
+
+section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top:50px;
+    padding:20px;
+     text-align:center;
+
+}
+
+
+h1{
+    font-size: 40px;
+    font-weight:600;
+    color:white;
+    text-transform: uppercase;
+     text-align:center;
+}
+.info{
+    font-weight:bold;
+    font-size:50px;
+}
