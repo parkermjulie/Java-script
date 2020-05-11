@@ -30,7 +30,7 @@ var fuel = 100;
 
 function fuelLeft () {
  fuel = fuel - 10; 
-    document.getElementById('left').innerHTML=fuel  ;
+    document.getElementById('left').innerHTML=fuel +' liters' ;
    
    if (fuel>=10) setTimeout(fuelLeft,500);
    
@@ -70,6 +70,8 @@ for (let i = 0; distanceTravelled < 172; i++){
 it should go from the [0] to [5] and then stop
 it should show text not numbers
 it should should show either all the values and the value now(true)would become bigger in size (font) and others will stay as they were in size (font)
+show and unshow using index==-1
+use array lengths to calculate how many and which array working with 
 
 
 //THIRD FUEL LEFT--> add too high too low becomes dengarous/ alert message if it reaches a certain value /true or false/ change the colour font /interact with numbers , combination of two numbers 
