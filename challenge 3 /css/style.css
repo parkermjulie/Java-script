@@ -12,7 +12,7 @@ html, body {
 }
 
 body{
-	font-family: Arial;
+   font-family: 'Montserrat', sans-serif;
     color:white;
         background-color:black;
  
@@ -23,9 +23,10 @@ header{
     display: grid;
         background-color: transparent;
     overflow: hidden;
-
+ grid-template-columns: 1fr 1fr 1fr;
 width: 100%;
-
+	text-align: center;
+padding:10px;
 
     z-index:1;
 }
@@ -52,15 +53,26 @@ margin-bottom:10%;
 
 
 h1{
-    font-family: "arial";
+   font-family: 'Montserrat', sans-serif;
     font-size:60px;
-    margin:10px;
+    margin:5%;
 }
 
 
 
+h3{
+	  
+	font-weight: 400;
+	color:white;
+	
+}
+p{
+	font-weight: 400;
+	color:white;
+	
+}
 .btn {
-  background-color: #789F59;
+  background-color: #5A82C7;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -73,14 +85,53 @@ h1{
 }
 
 .btn:hover {
-  background-color: #9FD173;
+  background-color: #3962A7;
 }
 
 
-/* Set the size of the div element that contains the map */
-      #map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-       }
 
 
+
+
+.marker {
+  background-image: url("https://i.giphy.com/media/hpFCIpvGxUKgTfjRKl/giphy.webp");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+a{
+	   font-family: 'Montserrat', sans-serif;
+	color:white;
+	text-decoration: none;
+}
+
+a:hover{
+	color:white;
+text-decoration: none;
+}
+
+
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.mapboxgl-popup-content {
+    background: #243E6A!important;  
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+	border-top-color:#243E6A!important;
+}
+
+.mapboxgl-popup-close-button {
+  color: white !important;
+}
