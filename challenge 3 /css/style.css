@@ -1,0 +1,96 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body{
+	font-family: Avenir;
+    color:white;
+        background-color: #203257;
+ 
+}
+
+
+
+.planetMode{
+       background-color: #191B2C;
+    
+}
+
+
+header{
+    display: grid;
+        background-color: transparent;
+   
+     grid-template-columns: 70% 1fr;
+    overflow: hidden;
+
+width: 100%;
+
+    padding: 0px;
+    z-index:1;
+}
+
+
+
+.img{
+    padding:3%;
+}
+
+ul.menu{
+    list-style: none;
+    padding-top:20px;
+    color:white;
+    margin:0px;
+    font-weight: 500;
+      
+}
+
+li{
+    padding:10px;
+    cursor: pointer;
+}
+
+section{
+    display:grid;
+    grid-template-columns: 50% 50%;
+
+     text-align:center;
+
+}
+
+
+h1{
+    font-family: "Amatic SC", cursive;
+    font-size:40px;
+}
+
+
+#planet {
+  position: relative;
+}
+
+.btn {
+  background-color: #789F59;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+     transition-duration: 0.4s;
+}
+
+.btn:hover {
+  background-color: #9FD173;
+}
+
