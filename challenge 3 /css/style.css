@@ -128,10 +128,15 @@ text-decoration: none;
     background: #243E6A!important;  
 }
 
-.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+.mapboxgl-popup-anchor-bottom 
+.mapboxgl-popup-tip {
 	border-top-color:#243E6A!important;
 }
 
+.mapboxgl-popup-anchor-top {
+	border-top-color:#243E6A!important;
+}
 .mapboxgl-popup-close-button {
   color: white !important;
 }
+

@@ -14,7 +14,8 @@ var geojson = {
     },
     properties: {
       title: 'Cocoa',
-      description: 'Because of that pretty pier ! '
+      description: 'Because of that pretty pier ! ',
+	
     }
   },
   {
@@ -73,6 +74,7 @@ geojson.features.forEach(function(marker) {
                   '</h3><p>' +
                   marker.properties.description +
                   '</p>'
+				  
               )
           )
           .addTo(map);
