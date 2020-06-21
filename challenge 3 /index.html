@@ -2,62 +2,53 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>SpaceX- Mars Dome</title>
-		<link rel="stylesheet" type="text/css" href="style/style.css">
-		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-		<script src="script/script.js" defer></script>
+		<title>SpaceX- Let's get home</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+		<script src="javascript/scipt.js" defer></script>
 		<script src="https://kit.fontawesome.com/2afe19ea84.js" crossorigin="anonymous"></script>
 	</head>
 <body>
 	
 <header id="head">
 <div class="img">
-   <img src="images/logo%20copy.png">
+   <img src="assets/logo.png">
 </div>
-<ul class="menu">
- 
-      <li onclick="changeImage()"><i class="fas fa-rocket"></i> Space Mode
-      </li>
-        
-</ul>
+
  
 	</header>
 	<section>
 
 
-<div><img id="planet" onclick="changeImage()" onclick="changeImage()" src="https://cdn.dribbble.com/users/22930/screenshots/3449820/earth_day.gif" width="95%"></div>
-
-
-
-
-
+<div class="container"><h1> Let's go home !</h1></div>
+<div class="menu">
+    <button id="land" class="btn"><a href="#spot">Potential landing spots </a></button>
+<button id="mars" class="btn"><a href="#m">Current Mars weather</a></button>
+<button id="earth" class="btn"><a href="#e">Current Earth weather</a></button>
+ </div>
 
 <div class="container">
-<h1> Earth Time</h1>
-<div id="earth" ></div>
-
-<div>
-<button class="btn" onclick="plantTrees()">Plant Trees</button>
-            
-        
-
-<button class="btn" onclick="plantSat()">Plant Satellites</button>
-    <div id="satelite"></div>
-    <div id="tree"></div>
-     
-        </div>
-
-            
-
-            
-</div> 
-
-
-    
+    <img src="https://media2.giphy.com/media/MAzunB1Ru6zAYlYgPD/giphy.webp">
+</div>
   
 </section>
 
+  
+  <section id="spot">
+      <h1> Potential Landing Spots</h1>
+       <div id="map"></div>
+  </section>
    
-
+   <section id="m">
+       <h1> Current Mars Weather</h1>
+       <div> nasa API</div>
+   </section>
+<section id="e">
+    <h1> Current Earth Weather</h1>
+    <div> weather API</div>
+</section>
 	</body>
+	 <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcohCYsBbuEorUmLDPzalKp0_F6gBXMY4&callback=initMap">
+    </script>
 </html>
