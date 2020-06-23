@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>SpaceX- Let's get home</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+<head>
+	<meta charset="utf-8">
+	<title>SpaceX- Let's get home</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400,600;900&display=swap" rel="stylesheet">
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet'>
 	
-		<script src="javascript/scipt.js" defer></script>
-		<script src="https://kit.fontawesome.com/2afe19ea84.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400,600;900&display=swap" rel="stylesheet">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
-		
-	</head>
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'>
+	</script>
+	<script defer src="javascript/scipt.js">
+	</script>
+</head>
 <body>
-	
-<header id="head">
-<div></div>
-<div class="img">
-   <img src="assets/logo.png">
-</div>
- <div></div>
 
- 
+<!-- Header -->
+	<header id="head">
+		<div></div>
+		<div class="img"><img src="assets/logo.png"></div>
+		<div></div>
 	</header>
-	<section>
-
-
-<div class="container"><h1> Let's go home !</h1></div>
-<div class="menu">
-    <button id="land" class="btn"><a href="#spot">Potential landing spots </a></button>
-<button id="mars" class="btn"><a href="#m">Current Mars weather</a></button>
-<button id="earth" class="btn"><a href="#e">Current Earth weather</a></button>
- </div>
-
-<div class="container">
-    <img src="https://media2.giphy.com/media/MAzunB1Ru6zAYlYgPD/giphy.webp">
-</div>
-  
-</section>
-
-  
-  <section id="spot">
-      <h1> Potential Landing Spots</h1>
-<div id='map' style='width: 100%; height: 500px;'></div>
-  </section>
-   
-   <section id="m">
-       <h1> Current Mars Weather</h1>
-       <div> nasa API</div>
-   </section>
-<section id="e">
-    <h1> Current Earth Weather</h1>
-    <div> weather API</div>
-</section>
-	</body>
 	
-  
+<!-- MAIN MENU -->	
+	<section>
+		<div class="container">
+			<h1>Let's go home !</h1>
+		</div>
+		<div class="menu">
+			<button class="btn" id="land"><a href="#spot">Potential landing spots</a></button> <button class="btn" id="earth"><a href="#earth">Current Earth weather</a></button>
+		</div>
+		<div class="container"><img src="https://media2.giphy.com/media/MAzunB1Ru6zAYlYgPD/giphy.webp"></div>
+	</section>
+	
+<!-- WEATHER -->	
+	<section id="earth">
+		<h1>Current Earth Weather</h1>
+		<article id="weather"></article>
+		<form>
+			<label for="city"></label>
+			<h3><label for="city">🚀 Choose a city to land:</label></h3><label for="city"></label> <input id="city" name="city" type="text"> <input id="getWeather" type="button" value="good to land there?">
+		</form>
+	</section>
+	
+<!-- LANDING SPOTS -->	
+	<section id="spot">
+		<h1>Potential Landing Spots</h1>
+		<div id="menu">
+			<div>
+				<input id="light-v10" type="radio" value="dark"> <label for="light-v10">🌞 Day</label>
+			</div>
+			<div>
+				<input id="dark-v10" type="radio" value="dark"> <label for="dark-v10">🌙 Night</label>
+			</div>
+			<div>
+				<input id="satellite-v9" type="radio" value="satellite"> <label for="satellite-v9">🌎 From Air</label>
+			</div>
+		</div>
+		<div id='map' style='width: 100%; height: 500px;'></div>
+	</section>
+</body>
 </html>

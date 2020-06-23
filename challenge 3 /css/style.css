@@ -1,142 +1,159 @@
+/* MAIN */
+
+
 html {
 	scroll-behavior: smooth;
 }
-
 * {
 	box-sizing: border-box;
 }
-
 html, body {
-  height: 100%;
-  margin: 0;
+	height: 100%;
+	margin: 0;
 }
-
-body{
-   font-family: 'Montserrat', sans-serif;
-    color:white;
-        background-color:black;
- 
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	background-color: black;
 }
-
-
-header{
-    display: grid;
-        background-color: transparent;
-    overflow: hidden;
- grid-template-columns: 1fr 1fr 1fr;
-width: 100%;
+header {
+	display: grid;
+	background-color: transparent;
+	overflow: hidden;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100%;
 	text-align: center;
-padding:10px;
-
-    z-index:1;
+	padding: 10px;
+	z-index: 1;
 }
-
-
-
-.img{
-    padding:3%;
+.img {
+	padding: 3%;
 }
-
-
-section{
-    display:grid;
-    grid-template-columns: 1fr;
-margin-bottom:10%;
-     text-align:center;
-
+section {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-bottom: 10%;
+	text-align: center;
 }
-
-.container{
-    margin:10px;
-    
+.container {
+	margin: 10px;
 }
-
-
-h1{
-   font-family: 'Montserrat', sans-serif;
-    font-size:60px;
-    margin:5%;
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	margin: 5%;
 }
-
-
-
-h3{
-	  
+h3 {
 	font-weight: 400;
-	color:white;
-	
+	color: white;
 }
-p{
+p {
 	font-weight: 400;
-	color:white;
-	
+	color: white;
 }
-.btn {
-  background-color: #5A82C7;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-     transition-duration: 0.4s;
-      
-}
-
-.btn:hover {
-  background-color: #3962A7;
-}
-
-
-
-
-
-
-.marker {
-  background-image: url("https://i.giphy.com/media/hpFCIpvGxUKgTfjRKl/giphy.webp");
-  background-size: cover;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-a{
-	   font-family: 'Montserrat', sans-serif;
-	color:white;
+a {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
 	text-decoration: none;
 }
-
-a:hover{
-	color:white;
-text-decoration: none;
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+ /* MENU */
+.btn {
+	background-color: #5A82C7;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+}
+.btn:hover {
+	background-color: #3962A7;
+}
+#menu {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100%;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
 }
 
 
 
+/* MAP */
+.marker {
+	background-image: url("https://i.giphy.com/media/hpFCIpvGxUKgTfjRKl/giphy.webp");
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
 .mapboxgl-popup {
-  max-width: 200px;
+	max-width: 200px;
 }
-
 .mapboxgl-popup-content {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
 }
-
-
 .mapboxgl-popup-content {
-    background: #243E6A!important;  
+	background: #243E6A!important;
 }
-
-.mapboxgl-popup-anchor-bottom 
-.mapboxgl-popup-tip {
-	border-top-color:#243E6A!important;
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+	border-top-color: #243E6A!important;
 }
-
 .mapboxgl-popup-anchor-top {
-	border-top-color:#243E6A!important;
+	border-top-color: #243E6A!important;
 }
 .mapboxgl-popup-close-button {
-  color: white !important;
+	color: white !important;
+}
+mapboxgl-popup-tip {
+	border-top-color: transparent !important;
 }
 
+
+
+/* WEATHER */
+#weather {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 800
+	text-align: center;
+	line-height: 40px;
+	color: #FFCE56;
+	width: 100%;
+	margin-bottom: 5%;
+}
+#text {
+	color: black;
+}
+input {
+	color: #5A82C7;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	border-style: none;
+	padding: 10px;
+}
+input[type="radio"] {
+	display: none;
+}
+input[type="button" i] {
+	background-color: #5A82C7;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	border-style: none;
+	padding: 10px;
+}
+input[type=text]:focus {
+	background-color: #5A82C7;
+	color: white;
+}
+label {
+	cursor: pointer;
+}
